@@ -1,0 +1,981 @@
+@import url('https://fonts.googleapis.com/css2?family=Alegreya&family=Cookie&family=Kaushan+Script&family=Lobster+Two:ital,wght@1,700&family=Mooli&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background: url(images/bg.jpg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+section {
+    width: 100%;
+    height: 100vh;
+}
+
+section nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    right: 0;
+    left: 0;
+    background: rbga(0, 0, 0, 0, 2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+section nav .logo img {
+    width: 80px;
+    height: 80px;
+    right: -50px;
+    background-size: cover;
+    cursor: pointer;
+    margin: 7px 0;
+    position: relative;
+    justify-content: center;
+    display: flex;
+    align-content: center;
+}
+
+section nav ul {
+    list-style: none;
+}
+
+section nav ul li {
+
+    display: inline-block;
+    margin: 0 15px;
+}
+
+section nav ul li a {
+    text-decoration: none;
+    font-family: 'Mooli', cursive;
+    color: white;
+    font-weight: 500;
+    font-size: 25px;
+    transition: 0.1s;
+}
+
+section nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    background: #ffb600;
+    display: block;
+    transition: 0.2s linear;
+}
+
+section nav ul li a:hover::after {
+    width: 100%;
+}
+
+section nav ul li a:hover {
+    color: #ffb600;
+}
+
+section nav .icon i {
+    font-size: 25px;
+    color: white;
+    margin: 0 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+section nav .icon i:hover {
+    color: #ffb600;
+}
+
+section .main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    top: 170px;
+    right: 400px;
+}
+
+section .main .men_text p:nth-child(1) {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    /*font-family: 'Lobster Two', cursive;*/
+    position: relative;
+    top: -5px;
+    left: 110px;
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+section .main .men_text h1 {
+    font-size: 60px;
+    font-family: 'Lobster Two', cursive;
+    position: relative;
+    top: 35px;
+    left: 110px;
+    color: aliceblue;
+}
+
+section .main .men_text h1 span {
+    color: #ffb600;
+    padding-left: 20px;
+    line-height: 22px;
+    font-size: 100px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+section .main .men_text p:nth-child(3) {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    position: relative;
+    top: 65px;
+    left: 110px;
+    color: aliceblue;
+    letter-spacing: 1px;
+    font-style: italic;
+}
+
+section p {
+    width: 650px;
+    text-align: justify;
+    position: relative;
+    left: 150px;
+    bottom: 120px;
+    letter-spacing: 1px;
+    line-height: 23px;
+    top: 290px;
+    color: aliceblue;
+}
+
+section .main_btn button {
+    position: relative;
+    width: 150px;
+    padding: 9px 25px;
+    text-align: center;
+    border: 2px solid orange;
+    background: transparent;
+    color: #fff;
+    border-radius: 50px;
+    left: 150px;
+    bottom: -330px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+section .main_btn button a {
+    position: relative;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin-right: 8px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+section .main_btn i {
+    position: relative;
+    left: 115px;
+    bottom: -330px;
+    color: white;
+    transition: 0.3s;
+}
+
+section .main_btn:hover i {
+    border-radius: -1px;
+    shape-outside: margin-box;
+    transform: translate(10px);
+}
+
+section .main_btn button span {
+    background: orange;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+
+section .main_btn button:hover span {
+    width: 100%;
+}
+
+section .media {
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 40px;
+    height: 200px;
+    left: 0;
+    font-size: 25px;
+    top: -60px;
+}
+
+section .media i:hover {
+    color: orange;
+}
+
+/*About*/
+.about {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    background-color: rgb(246, 155, 139);
+    background: url(images/s.jpg) no-repeat;
+    height: 100vh;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+}
+
+.about .about_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 65px;
+}
+
+.about .about_main .image img {
+    width: 440px;
+    height: 440px;
+    background-size: cover;
+    border-radius: 400px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid #fefefe;
+    transition: 0.3s;
+}
+
+.about .about_main .image::before {
+    width: 450px;
+    height: 450px;
+    border: 2px solid white;
+    content: '';
+    border-radius: 450px;
+    position: absolute;
+    left: 152px;
+    margin-top: -6px;
+    padding-bottom: 0 5px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.about .about_main .image:hover img {
+    transform: scale(1.1);
+}
+
+.about .about_main .about_text h1 span {
+    color: #ffb600;
+    margin-right: 15px;
+    font-family: 'Kaushan Script';
+    font-size: 100px;
+}
+
+.about .about_main .about_text h1 {
+    font-size: 80px;
+    font-family: 'Lobster Two', cursive;
+    position: relative;
+    bottom: 50px;
+    line-height: 22px;
+    color: white;
+}
+
+.about .about_main .about_text h3 {
+    font-size: 50px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0 0 50px 0;
+    color: white;
+    font-style: italic;
+}
+
+.about .about_main .about_text p {
+    width: 650px;
+    text-align: justify;
+    margin-right: 30px;
+    line-height: 23px;
+    color: aliceblue;
+    letter-spacing: 1px;
+    position: relative;
+    bottom: 120px;
+    top: 50px;
+}
+
+.about .about_btn button {
+    position: relative;
+    width: 150px;
+    padding: 9px 25px;
+    text-align: center;
+    border: 2px solid orange;
+    background: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    left: 700px;
+    bottom: 70px;
+    overflow: hidden;
+}
+
+.about .about_btn button a {
+    position: relative;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 8px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+.about .about_btn button span {
+    background: orange;
+    height: 100%;
+    width: 0;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 0;
+    transition: 0.5s;
+}
+
+.about .about_btn button:hover span {
+    width: 100%;
+}
+
+.about .about_btn i {
+    position: absolute;
+    right: 705px;
+    bottom: -597px;
+    color: white;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.about .about_btn :hover i {
+    border-radius: -1px;
+    shape-outside: margin-box;
+    transform: translate(10px);
+}
+
+/****MENU*****/
+.menu {
+    width: 100%;
+    padding: 70px 0;
+    /*background-color: rgb(172, 35, 10);*/
+    background-size: cover;
+    background-position: center;
+}
+
+.menu h1 {
+    font-size: 80px;
+    font-family: 'Lobster Two', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+
+.menu h1 span {
+    color: orange;
+    margin-left: 15px;
+    font-family: 'Kaushan Script';
+    font-size: 90px;
+}
+
+.menu h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: orange;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.menu .menu_box {
+    width: 95%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.menu .menu_box .menu_card {
+    width: 325px;
+    height: 510px;
+    padding-top: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.48);
+}
+
+.menu .menu_box .menu_card .menu_image {
+    width: 300px;
+    height: 245px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.menu .menu_box .menu_card .menu_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card .menu_image:hover img {
+    transform: scale(1.1);
+}
+
+.menu .menu_box .menu_card .small_card {
+    width: 45px;
+    height: 45px;
+    float: right;
+    position: relative;
+    top: -240px;
+    right: -8px;
+    opacity: 0;
+    border-radius: 7px;
+    transition: 0.3s;
+}
+
+.menu .menu_box .menu_card:hover .small_card {
+    position: relative;
+    top: -240px;
+    right: 20px;
+    opacity: 1;
+}
+
+.menu .menu_box .menu_card .small_card i {
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 50px;
+    color: #000;
+    cursor: pointer;
+    text-shadow: 0 0 6px #000;
+    transition: 0.2s;
+}
+
+.menu .menu_box .menu_card .small_card i:hover {
+    color: orange;
+}
+
+.menu .menu_box .menu_card .menu_info h2 {
+    width: 85%;
+    text-align: center;
+    margin: 10px auto;
+    font-size: 25px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: orange;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.menu .menu_box .menu_card .menu_info h2:hover {
+    color: #000;
+}
+
+.menu .menu_box .menu_card .menu_info p {
+    text-align: center;
+    margin-top: 8px;
+    line-height: 21px;
+}
+
+.menu .menu_box .menu_card .menu_info h3 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_icon {
+    color: orange;
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    background: #000;
+    padding: 8px 10px;
+    margin: 0 80px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.menu .menu_box .menu_card .menu_info .menu_btn:hover {
+    background-color: orange;
+}
+
+.gallery {
+    width: 100%;
+    padding: 70px 0;
+    background: url(images/plate.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.gallery h1 {
+    font-size: 80px;
+    font-family: 'Lobster Two', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gallery h1 span {
+    margin-left: 15px;
+    color: orange;
+    font-size: 90px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.gallery h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: orange;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.gallery .gallery_image_box {
+    width: 90%;
+    height: 50%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.gallery .gallery_image_box .gallery_image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+}
+
+.gallery .gallery_image_box .gallery_image img {
+    width: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.gallery .gallery_image_box .gallery_image:hover img {
+    opacity: 0.4;
+}
+
+.gallery .gallery_image_box .gallery_image h3 {
+    position: absolute;
+    font-size: 35px;
+    margin-bottom: 130px;
+    color: orange;
+    font-family: polo;
+    z-index: 5;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.gallery .gallery_image_box .gallery_image:hover h3 {
+    opacity: 1;
+}
+
+.gallery .gallery_image_box .gallery_image p {
+    position: absolute;
+    width: 400px;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+    line-height: 22px;
+    opacity: 0;
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallery .gallery_image_box .gallery_image:hover p {
+    opacity: 1;
+}
+
+.gallery .gallery_image_box .gallery_image .gallery_btn {
+    position: absolute;
+    margin-top: 180px;
+    color: #000;
+    background: orange;
+    padding: 7px 25px;
+    text-decoration: none;
+    opacity: 0;
+    transform: translateY(45px);
+    z-index: 5;
+    transition: 0.3s;
+}
+
+.gallery .gallery_image_box .gallery_image:hover .gallery_btn {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*****REVIEW*****/
+.review {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    background-image: url(images/bg2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/*.review h1::before{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+}
+*/
+.review h1 {
+    font-size: 80px;
+    font-family: 'Lobster Two', cursive;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.review h1 span {
+    margin-left: 15px;
+    color: orange;
+    font-size: 90px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.review h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: orange;
+    position: relative;
+    display: block;
+    bottom: 15px;
+}
+
+.review .review_box {
+    width: 95%;
+    margin: 70px auto;
+    display: flex;
+}
+
+.review .review_box .review_card {
+    width: 350px;
+    height: 435px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    padding: 8px 20px;
+    margin: 0 8px;
+}
+
+.review .review_box .review_card .review_profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_profile {
+    transform: translateY(-60px);
+}
+
+.review .review_box .review_card .review_profile img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    border: 5px solid #8b7a7a;
+}
+
+.review .review_box .review_card .review_text {
+    text-align: center;
+}
+
+.review .review_box .review_card .review_text .name {
+    color: #000;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .name {
+    transform: translateY(-50px);
+}
+
+.review .review_box .review_card .review_text .review_icon {
+    color: orange;
+    transform: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .review_icon {
+    transform: translateY(-30px);
+}
+
+.review .review_box .review_card .review_text .review_social i {
+    margin: 5px 1px;
+    font-size: 15px;
+    opacity: 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text .review_social i {
+    opacity: 1;
+    transform: translateY(-8px);
+}
+
+.review .review_box .review_card .review_text p {
+    text-align: center;
+    line-height: 22px;
+    transition: 0.3s;
+}
+
+.review .review_box .review_card:hover .review_text p {
+    margin-top: 5px;
+}
+
+/******ORDER NOW*******/
+.order {
+    width: 100%;
+    height: 100vh;
+    padding: 70px 0;
+    background-image: url(images/plate.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.order h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #000;
+    font-family: 'Lobster Two', cursive;
+    font-size: 80px;
+}
+
+.order h1 span {
+    color: orange;
+    margin-right: 15px;
+    font-family: 'Kaushan Script', cursive;
+}
+
+.order h1 span::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: orange;
+    display: block;
+    position: relative;
+    bottom: 15px;
+}
+
+.order .order_main {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.order .order_main .order_image img {
+    width: 500px;
+    object-fit: cover;
+    object-position: center;
+    border: 5px solid #a59e9e;
+    transition: 0.3s;
+}
+
+.order .order_main .order_image:hover img {
+    transform: scale(1.1);
+}
+
+.order .order_main form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0 10px;
+}
+
+.order .order_main form .input p {
+    line-height: 25px;
+    color: orange;
+    font-size: 18px;
+    font-style: bold;
+}
+
+.order .order_main form .input {
+    margin: 7px;
+}
+
+.order .order_main form .input input {
+    width: 300px;
+    height: 35px;
+    padding: 0 10px;
+    border: 2px solid #cccccc;
+    background: #eeeeee;
+    outline: none;
+    border-radius: 3px;
+}
+
+.order .order_main form .input input:hover {
+    border: 2px solid orange;
+}
+
+.order .order_main form #submit {
+    position: relative;
+    width: 130px;
+    padding: 9px 25px;
+    right: -10px;
+    bottom: -10px;
+    overflow: hidden;
+    border-radius: 50px;
+    border: 2px solid orange;
+    background-color: transparent;
+    color: orange;
+    font-size: 16px;
+    font-style: bold;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.order .order_main form #submit:hover {
+    background-color: orange;
+    color: white;
+    transition: 0.3s;
+    overflow: hidden;
+}
+
+.order .order_main form .button .order_btn {
+    position: relative;
+    width: 150px;
+    padding: 9px 25px;
+    text-align: center;
+    border: 2px solid orange;
+    background: transparent;
+    border-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    left: -90px;
+    bottom: -50px;
+    overflow: hidden;
+}
+
+.order .order_main form .order_btn a {
+    position: relative;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-right: 8px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+/******Footer*******/
+
+footer {
+    width: 100%;
+    padding: 30px 0 0 20px;
+    background-color: #ffc5c5;
+}
+
+footer .footer_main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+footer .footer_main .footer_tag {
+    text-align: center;
+}
+
+footer .footer_main .footer_tag h2 {
+    color: #000;
+    margin-bottom: 25px;
+    font-size: 30px;
+    font-family: 'Lobster Two';
+}
+
+footer .footer_main .footer_tag h2:hover {
+    color: orange;
+}
+
+footer .footer_main .footer_tag p {
+    margin: 10px 0;
+    font-family: 'Mooli', sans-serif;
+}
+
+footer .footer_main .footer_tag p:hover {
+    color: orange;
+}
+
+footer .footer_main .footer_tag i {
+
+    font-size: 25px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+footer .footer_main .footer_tag i:hover {
+    color: orange;
+}
+
+footer .footer_main .footer_tag img {
+    object-fit: cover;
+    object-position: center;
+    transition: 0.3s;
+}
+
+footer .footer_main .footer_tag img:hover {
+    transform: scale(1.1);
+}
+
+footer .me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+}
+
+footer .me span {
+    color: orange;
+    margin-left: 5px;
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: orange;
+    border-radius: 15px;
+}
