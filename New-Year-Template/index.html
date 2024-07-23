@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy New Year Card</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="animation.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="clock">
+            <div class="digit-container">
+                <div class="digit" id="day1">0</div>
+            </div>
+            <div class="digit-container">
+                <div class="digit" id="day2">0</div>
+            </div>
+            <span>:</span>
+            <div class="digit-container">
+                <div class="digit" id="hour1">0</div>
+            </div>
+            <div class="digit-container">
+                <div class="digit" id="hour2">0</div>
+            </div>
+            <span>:</span>
+            <div class="digit-container">
+                <div class="digit" id="minute1">0</div>
+            </div>
+            <div class="digit-container">
+                <div class="digit" id="minute2">0</div>
+            </div>
+            <span>:</span>
+            <div class="digit-container">
+                <div class="digit" id="second1">0</div>
+            </div>
+            <div class="digit-container">
+                <div class="digit" id="second2">0</div>
+            </div>
+        </div>
+        <div class="countdown"></div>
+        <div class="card">
+            <div class="decor-container__upper">
+                <div class="decor-container">
+                    <div class="strings string1"></div>
+                    <div class="bulb bulb1"></div>
+                </div>
+
+                <div class="decor-container">
+                    <div class="strings string2"></div>
+                    <div class="bulb bulb2"></div>
+                </div>
+
+                <div class="decor-container">
+                    <div class="strings string3"></div>
+                    <div class="bulb bulb3"></div>
+                </div>
+
+                <div class="decor-container">
+                    <div class="strings string4"></div>
+                    <div class="bulb bulb4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="text-container">
+            <h2>HAPPY NEW YEAR</h2>
+            <h2>2024</h2>
+        </div>
+        <canvas id="confettiHTMLCanvas"></canvas>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
