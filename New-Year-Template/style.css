@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Lobster", sans-serif;
+    display: flex;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+.container {
+    color: white;
+    width: 550px;
+    padding: 2%;
+    background-color: #0d2146;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 2px 4px 8px #0d2146;
+}
+
+.heading {
+    color: #fff;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70%;
+    width: 50%;
+    margin: 50px 0;
+    /* background-color: #fff; */
+    border-radius: 10px;
+}
+
+.decor-container__upper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.decor-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.strings {
+    height: 0;
+    width: 0.3rem;
+}
+
+.bulb {
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: transparent;
+}
+
+.string1 {
+    height: 100px;
+    background-color: #adeb9c;
+}
+
+.bulb1 {
+    background-color: #adeb9c;
+}
+
+.string2 {
+    transition: all infinite ease-in;
+    height: 180px;
+    background-color: #f1a5c5;
+}
+
+.bulb2 {
+    background-color: #f1a5c5;
+}
+
+.string3 {
+    transition: all infinite ease-in;
+    height: 60px;
+    background-color: #d997dc;
+}
+
+.bulb3 {
+    background-color: #d997dc;
+}
+
+.string4 {
+    transition: all infinite ease-in;
+    height: 150px;
+    background-color: #d4db8a;
+}
+
+.bulb4 {
+    background-color: #d4db8a;
+}
+
+.text-container {
+    text-align: center;
+    color: #fff;
+}
+
+.text-container h2 {
+    font-size: 40px;
+    letter-spacing: 3px;
+}
+
+.clock {
+    display: flex;
+    font-size: 3rem;
+}
+
+.digit-container {
+    width: 50px;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    margin: 0 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.digit {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    /* opacity: 0; */
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    color: white;
+}
