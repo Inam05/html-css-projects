@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px 0;
+  }
+  
+  header {
+    background: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  #navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  #navbar h1 {
+    color: white;
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  #navbar ul li {
+    margin-right: 20px;
+  }
+  
+  #navbar ul li a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .hero {
+    height: 100vh;
+    background-image: url('background.jpg'); /* Replace 'hero-background.jpg' with your image */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  
+  section {
+    padding: 50px 0;
+  }
+  
+  /* Add more styles as needed */
+  
+  
