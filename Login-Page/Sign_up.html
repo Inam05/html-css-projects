@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to the sign up page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .login-wrap {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: rgb(169, 195, 251);
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 10px;
+            width: 100px;
+            height: auto;
+        }
+
+        .name-input {
+            width: calc(50% - 10px);
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .email-input {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .password-input {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .Confirm-input {
+            width: calc(100% - 20px);
+            margin-bottom: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .button-input{
+            border-radius: 10px;
+            width: calc(100% - 20px);
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/action.php"></form>
+    <div class="login-wrap">
+        <div class="sign-up-htm">
+            <img src="/WEB/HTML/login/images.jpg" alt="Logo">
+            <br>
+            <input type="text" placeholder="First Name" class="name-input">
+            <input type="text" placeholder="Last Name" class="name-input">
+        </div>
+        <div>
+            <input type="text" placeholder="Email" class="email-input">
+        </div>
+        <div>
+            <input type="password" placeholder="Password" class="password-input">
+        </div>
+        <div>
+            <input type="password" placeholder="Confirm Password" class="Confirm-input">
+        </div>
+        <br>
+        <span>
+            <input type="checkbox" size="500">
+            <label for="checkbox">I accept the Terms of Use & <u>Privacy Policy</u></label>
+        </span>
+        <br> <br>
+        <div>
+            <input type="submit" class="button-input" value="Sign UP" id="sign-up-htm">
+        </div>
+        <br> 
+        <div>
+            <label for=""> Already have an Account? <a href="/WEB/HTML/login_1.html">Login here</a> </label>
+        </div>
+        <br>
+    </div>
+</body>
+
+</html>
